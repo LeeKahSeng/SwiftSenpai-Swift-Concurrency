@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19142.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19129"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fetch Albums View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FetchAlbumsViewController" customModule="SwiftSenpai_Swift_Concurrency" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSN-FN-Psx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKU-8J-0GE">
+                                        <rect key="frame" x="16" y="10" width="122" height="30"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Closure">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closureButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v3E-up-wuU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Azx-5r-rnZ">
+                                        <rect key="frame" x="276" y="10" width="122" height="30"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Async/await">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="asyncURLSessionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jbd-3n-509"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aby-hq-QjD">
+                                        <rect key="frame" x="146" y="10" width="122" height="30"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Continuation">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="continuationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ic9-BZ-3Xq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemFillColor"/>
+                                <constraints>
+                                    <constraint firstItem="Azx-5r-rnZ" firstAttribute="width" secondItem="RKU-8J-0GE" secondAttribute="width" id="0Rh-Sc-kd8"/>
+                                    <constraint firstItem="Aby-hq-QjD" firstAttribute="leading" secondItem="RKU-8J-0GE" secondAttribute="trailing" constant="8" id="3kL-iU-BxI"/>
+                                    <constraint firstItem="Azx-5r-rnZ" firstAttribute="centerY" secondItem="fSN-FN-Psx" secondAttribute="centerY" id="AOt-eH-eAR"/>
+                                    <constraint firstItem="Aby-hq-QjD" firstAttribute="centerY" secondItem="fSN-FN-Psx" secondAttribute="centerY" id="Ca6-Yf-WYH"/>
+                                    <constraint firstItem="RKU-8J-0GE" firstAttribute="centerY" secondItem="fSN-FN-Psx" secondAttribute="centerY" id="KFV-Rp-gyY"/>
+                                    <constraint firstItem="RKU-8J-0GE" firstAttribute="centerY" secondItem="fSN-FN-Psx" secondAttribute="centerY" id="WUM-fe-tgF"/>
+                                    <constraint firstItem="Aby-hq-QjD" firstAttribute="centerY" secondItem="fSN-FN-Psx" secondAttribute="centerY" id="Wfe-3o-VZk"/>
+                                    <constraint firstAttribute="trailing" secondItem="Azx-5r-rnZ" secondAttribute="trailing" constant="16" id="ZxL-ia-EZ7"/>
+                                    <constraint firstItem="Aby-hq-QjD" firstAttribute="width" secondItem="RKU-8J-0GE" secondAttribute="width" id="al4-xR-WQ1"/>
+                                    <constraint firstAttribute="height" constant="50" id="c3e-7O-qqh"/>
+                                    <constraint firstItem="RKU-8J-0GE" firstAttribute="leading" secondItem="fSN-FN-Psx" secondAttribute="leading" constant="16" id="fiS-RY-fRI"/>
+                                    <constraint firstItem="Azx-5r-rnZ" firstAttribute="centerY" secondItem="fSN-FN-Psx" secondAttribute="centerY" id="mQ5-6O-RPQ"/>
+                                    <constraint firstItem="Azx-5r-rnZ" firstAttribute="leading" secondItem="Aby-hq-QjD" secondAttribute="trailing" constant="8" id="rqA-bS-5Ix"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NGr-l8-XvT">
+                                <rect key="frame" x="0.0" y="94" width="414" height="802"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uln-ya-Iwc">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="list-cell" id="Pvy-zL-HrP">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="a28-c1-AKu">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NGr-l8-XvT" secondAttribute="trailing" id="GHs-Sy-2sb"/>
+                            <constraint firstItem="NGr-l8-XvT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Rjb-O7-YwC"/>
+                            <constraint firstItem="fSN-FN-Psx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="U0b-JT-7Re"/>
+                            <constraint firstItem="fSN-FN-Psx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VKZ-cF-ks6"/>
+                            <constraint firstItem="NGr-l8-XvT" firstAttribute="top" secondItem="fSN-FN-Psx" secondAttribute="bottom" id="dLM-ov-efZ"/>
+                            <constraint firstItem="fSN-FN-Psx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pFM-m6-kcH"/>
+                            <constraint firstAttribute="bottom" secondItem="NGr-l8-XvT" secondAttribute="bottom" id="yP8-5L-LMO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="NGr-l8-XvT" id="GaF-vY-1Go"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="107.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
