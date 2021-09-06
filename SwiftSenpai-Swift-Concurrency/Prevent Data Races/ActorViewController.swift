@@ -40,7 +40,7 @@ class ActorViewController: UIViewController {
                 
                 for _ in 0..<totalCount {
                     // Create child task
-                    taskGroup.async {
+                    taskGroup.addTask {
                         await counter.addCount()
                     }
                 }

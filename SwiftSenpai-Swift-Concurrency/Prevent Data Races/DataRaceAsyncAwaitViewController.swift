@@ -40,7 +40,7 @@ class DataRaceAsyncAwaitViewController: UIViewController {
                 
                 for _ in 0..<totalCount {
                     // Create child task
-                    taskGroup.async {
+                    taskGroup.addTask {
                         counter.addCount()
                     }
                 }
