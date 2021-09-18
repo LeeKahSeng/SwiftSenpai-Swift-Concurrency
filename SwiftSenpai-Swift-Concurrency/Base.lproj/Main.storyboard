@@ -71,6 +71,31 @@
                                             <segue destination="S9v-mS-bYw" kind="show" id="Tr5-wd-jBr"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="3jC-ci-gur">
+                                        <rect key="frame" x="0.0" y="191" width="414" height="86.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3jC-ci-gur" id="lMn-aZ-H9L">
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="86.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Actor Reentrancy Problem in Swift" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nnV-wS-wyX">
+                                                    <rect key="frame" x="20" y="19" width="356.5" height="48.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nnV-wS-wyX" firstAttribute="leading" secondItem="lMn-aZ-H9L" secondAttribute="leadingMargin" id="BfF-tL-Fok"/>
+                                                <constraint firstItem="nnV-wS-wyX" firstAttribute="top" secondItem="lMn-aZ-H9L" secondAttribute="topMargin" constant="8" id="YRb-2d-i03"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="nnV-wS-wyX" secondAttribute="trailing" id="aiu-aH-H1f"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="nnV-wS-wyX" secondAttribute="bottom" constant="8" id="azq-cQ-S9X"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="URu-DR-N4F" kind="show" id="m6N-Sw-qbG"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -209,6 +234,71 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FV3-Sr-xvd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-373.91304347826087" y="-84.375"/>
+        </scene>
+        <!--Actor Reentrancy-->
+        <scene sceneID="FV6-WQ-7qj">
+            <objects>
+                <viewController id="URu-DR-N4F" customClass="ReentrancyViewController" customModule="SwiftSenpai_Swift_Concurrency" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VWe-Dg-cDJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7R7-dq-Wpt">
+                                <rect key="frame" x="40" y="206" width="334" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Execute example with reentrancy problem"/>
+                                <connections>
+                                    <action selector="reentrancyProblemExampleButtonTapped:" destination="URu-DR-N4F" eventType="touchUpInside" id="XAG-UM-x9D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j26-v9-p31">
+                                <rect key="frame" x="40" y="267" width="334" height="48"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Execute example with reentrancy handling (synchronous code)"/>
+                                <connections>
+                                    <action selector="reentrancyHandlingExample1ButtonTapped:" destination="URu-DR-N4F" eventType="touchUpInside" id="bYI-7w-6ob"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjE-u9-W8l">
+                                <rect key="frame" x="40" y="345" width="334" height="48"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Execute example with reentrancy handling (check state)"/>
+                                <connections>
+                                    <action selector="reentrancyHandlingExample2ButtonTapped:" destination="URu-DR-N4F" eventType="touchUpInside" id="sVd-0Z-6QJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Xcode console for result after tap on buttons below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0g-qe-A7n">
+                                <rect key="frame" x="40" y="118" width="334" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tc4-UI-lDm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7R7-dq-Wpt" firstAttribute="leading" secondItem="Tc4-UI-lDm" secondAttribute="leading" constant="40" id="3ed-QP-GVn"/>
+                            <constraint firstItem="xjE-u9-W8l" firstAttribute="centerX" secondItem="VWe-Dg-cDJ" secondAttribute="centerX" id="BfN-jT-TEA"/>
+                            <constraint firstItem="7R7-dq-Wpt" firstAttribute="top" secondItem="d0g-qe-A7n" secondAttribute="bottom" constant="40" id="HS0-ye-b1f"/>
+                            <constraint firstItem="Tc4-UI-lDm" firstAttribute="trailing" secondItem="d0g-qe-A7n" secondAttribute="trailing" constant="40" id="IkH-G4-hnG"/>
+                            <constraint firstItem="Tc4-UI-lDm" firstAttribute="trailing" secondItem="xjE-u9-W8l" secondAttribute="trailing" constant="40" id="PId-iY-bHn"/>
+                            <constraint firstItem="xjE-u9-W8l" firstAttribute="top" secondItem="j26-v9-p31" secondAttribute="bottom" constant="30" id="fgk-56-Jgz"/>
+                            <constraint firstItem="j26-v9-p31" firstAttribute="centerX" secondItem="VWe-Dg-cDJ" secondAttribute="centerX" id="gqv-j2-Zif"/>
+                            <constraint firstItem="d0g-qe-A7n" firstAttribute="top" secondItem="Tc4-UI-lDm" secondAttribute="top" constant="30" id="jQF-Az-huQ"/>
+                            <constraint firstItem="Tc4-UI-lDm" firstAttribute="trailing" secondItem="7R7-dq-Wpt" secondAttribute="trailing" constant="40" id="l6W-a0-SDR"/>
+                            <constraint firstItem="j26-v9-p31" firstAttribute="leading" secondItem="Tc4-UI-lDm" secondAttribute="leading" constant="40" id="qc2-XC-W7B"/>
+                            <constraint firstItem="j26-v9-p31" firstAttribute="top" secondItem="7R7-dq-Wpt" secondAttribute="bottom" constant="30" id="sjH-6L-WUV"/>
+                            <constraint firstItem="7R7-dq-Wpt" firstAttribute="centerX" secondItem="VWe-Dg-cDJ" secondAttribute="centerX" id="t5w-I5-1kQ"/>
+                            <constraint firstItem="xjE-u9-W8l" firstAttribute="leading" secondItem="Tc4-UI-lDm" secondAttribute="leading" constant="40" id="u16-0h-2wA"/>
+                            <constraint firstItem="d0g-qe-A7n" firstAttribute="leading" secondItem="Tc4-UI-lDm" secondAttribute="leading" constant="40" id="vGE-H4-RJ5"/>
+                            <constraint firstItem="Tc4-UI-lDm" firstAttribute="trailing" secondItem="j26-v9-p31" secondAttribute="trailing" constant="40" id="w8V-2W-w0R"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Actor Reentrancy" id="Xea-eS-3TT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3xk-yE-QfA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1889.8550724637682" y="1692.8571428571429"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="fK8-bA-W1E">
