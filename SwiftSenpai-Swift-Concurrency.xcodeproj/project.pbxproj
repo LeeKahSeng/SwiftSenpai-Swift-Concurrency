@@ -13,6 +13,7 @@
 		182CC6FA26C6994A00D84105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182CC6F826C6994A00D84105 /* Main.storyboard */; };
 		182CC6FC26C6994E00D84105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182CC6FB26C6994E00D84105 /* Assets.xcassets */; };
 		182CC6FF26C6994E00D84105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182CC6FD26C6994E00D84105 /* LaunchScreen.storyboard */; };
+		183074FB26EC996A0071FBEF /* ReentrancyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183074FA26EC996A0071FBEF /* ReentrancyViewController.swift */; };
 		184ECFC726C7752500C8EB68 /* AlbumsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184ECFC626C7752500C8EB68 /* AlbumsFetcher.swift */; };
 		18BBA1EC26DD170E00C7CB4E /* DataRaceDispatchQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA1EB26DD170E00C7CB4E /* DataRaceDispatchQueueViewController.swift */; };
 		18BBA1EE26DD1A4800C7CB4E /* DataRaceAsyncAwaitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA1ED26DD1A4800C7CB4E /* DataRaceAsyncAwaitViewController.swift */; };
@@ -47,6 +48,7 @@
 		182CC70026C6994E00D84105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		182CC70526C6994E00D84105 /* SwiftSenpai-Swift-ConcurrencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftSenpai-Swift-ConcurrencyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		182CC70F26C6994E00D84105 /* SwiftSenpai-Swift-ConcurrencyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftSenpai-Swift-ConcurrencyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		183074FA26EC996A0071FBEF /* ReentrancyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReentrancyViewController.swift; sourceTree = "<group>"; };
 		184ECFC626C7752500C8EB68 /* AlbumsFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsFetcher.swift; sourceTree = "<group>"; };
 		18BBA1EB26DD170E00C7CB4E /* DataRaceDispatchQueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRaceDispatchQueueViewController.swift; sourceTree = "<group>"; };
 		18BBA1ED26DD1A4800C7CB4E /* DataRaceAsyncAwaitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRaceAsyncAwaitViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				18BBA1E726DD03C100C7CB4E /* Making Network Requests  */,
 				18BBA1E826DD040E00C7CB4E /* Prevent Data Races */,
+				183074F926EC98B00071FBEF /* Reentrancy */,
 				182CC6F226C6994A00D84105 /* AppDelegate.swift */,
 				182CC6F426C6994A00D84105 /* SceneDelegate.swift */,
 				182CC6F826C6994A00D84105 /* Main.storyboard */,
@@ -109,6 +112,14 @@
 				182CC70026C6994E00D84105 /* Info.plist */,
 			);
 			path = "SwiftSenpai-Swift-Concurrency";
+			sourceTree = "<group>";
+		};
+		183074F926EC98B00071FBEF /* Reentrancy */ = {
+			isa = PBXGroup;
+			children = (
+				183074FA26EC996A0071FBEF /* ReentrancyViewController.swift */,
+			);
+			path = Reentrancy;
 			sourceTree = "<group>";
 		};
 		18BBA1E726DD03C100C7CB4E /* Making Network Requests  */ = {
@@ -264,6 +275,7 @@
 				182CC6F726C6994A00D84105 /* FetchAlbumsViewController.swift in Sources */,
 				18BBA1EE26DD1A4800C7CB4E /* DataRaceAsyncAwaitViewController.swift in Sources */,
 				182CC6F326C6994A00D84105 /* AppDelegate.swift in Sources */,
+				183074FB26EC996A0071FBEF /* ReentrancyViewController.swift in Sources */,
 				182CC6F526C6994A00D84105 /* SceneDelegate.swift in Sources */,
 				18BBA1F026DD27F800C7CB4E /* ActorViewController.swift in Sources */,
 				184ECFC726C7752500C8EB68 /* AlbumsFetcher.swift in Sources */,
