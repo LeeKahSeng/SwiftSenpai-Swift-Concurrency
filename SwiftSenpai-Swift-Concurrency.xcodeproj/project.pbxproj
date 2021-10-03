@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1804EE282709648600E91CA1 /* SendableDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804EE272709648600E91CA1 /* SendableDemoViewController.swift */; };
+		1804EE2A2709748C00E91CA1 /* NonSendableDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804EE292709748C00E91CA1 /* NonSendableDemoViewController.swift */; };
 		182CC6F326C6994A00D84105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182CC6F226C6994A00D84105 /* AppDelegate.swift */; };
 		182CC6F526C6994A00D84105 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182CC6F426C6994A00D84105 /* SceneDelegate.swift */; };
 		182CC6F726C6994A00D84105 /* FetchAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182CC6F626C6994A00D84105 /* FetchAlbumsViewController.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1804EE272709648600E91CA1 /* SendableDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendableDemoViewController.swift; sourceTree = "<group>"; };
+		1804EE292709748C00E91CA1 /* NonSendableDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonSendableDemoViewController.swift; sourceTree = "<group>"; };
 		182CC6EF26C6994A00D84105 /* SwiftSenpai-Swift-Concurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftSenpai-Swift-Concurrency.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		182CC6F226C6994A00D84105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		182CC6F426C6994A00D84105 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1804EE262709642600E91CA1 /* Sendable Demo */ = {
+			isa = PBXGroup;
+			children = (
+				1804EE292709748C00E91CA1 /* NonSendableDemoViewController.swift */,
+				1804EE272709648600E91CA1 /* SendableDemoViewController.swift */,
+			);
+			path = "Sendable Demo";
+			sourceTree = "<group>";
+		};
 		182CC6E626C6994A00D84105 = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +116,8 @@
 			children = (
 				18BBA1E726DD03C100C7CB4E /* Making Network Requests  */,
 				18BBA1E826DD040E00C7CB4E /* Prevent Data Races */,
-				183074F926EC98B00071FBEF /* Reentrancy */,
+				183074F926EC98B00071FBEF /* Actor Reentrancy Problem */,
+				1804EE262709642600E91CA1 /* Sendable Demo */,
 				182CC6F226C6994A00D84105 /* AppDelegate.swift */,
 				182CC6F426C6994A00D84105 /* SceneDelegate.swift */,
 				182CC6F826C6994A00D84105 /* Main.storyboard */,
@@ -114,12 +128,12 @@
 			path = "SwiftSenpai-Swift-Concurrency";
 			sourceTree = "<group>";
 		};
-		183074F926EC98B00071FBEF /* Reentrancy */ = {
+		183074F926EC98B00071FBEF /* Actor Reentrancy Problem */ = {
 			isa = PBXGroup;
 			children = (
 				183074FA26EC996A0071FBEF /* ReentrancyViewController.swift */,
 			);
-			path = Reentrancy;
+			path = "Actor Reentrancy Problem";
 			sourceTree = "<group>";
 		};
 		18BBA1E726DD03C100C7CB4E /* Making Network Requests  */ = {
@@ -277,6 +291,8 @@
 				182CC6F326C6994A00D84105 /* AppDelegate.swift in Sources */,
 				183074FB26EC996A0071FBEF /* ReentrancyViewController.swift in Sources */,
 				182CC6F526C6994A00D84105 /* SceneDelegate.swift in Sources */,
+				1804EE2A2709748C00E91CA1 /* NonSendableDemoViewController.swift in Sources */,
+				1804EE282709648600E91CA1 /* SendableDemoViewController.swift in Sources */,
 				18BBA1F026DD27F800C7CB4E /* ActorViewController.swift in Sources */,
 				184ECFC726C7752500C8EB68 /* AlbumsFetcher.swift in Sources */,
 				18BBA1EC26DD170E00C7CB4E /* DataRaceDispatchQueueViewController.swift in Sources */,
