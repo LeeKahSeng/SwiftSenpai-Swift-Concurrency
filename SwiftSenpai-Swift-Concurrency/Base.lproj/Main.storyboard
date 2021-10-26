@@ -121,6 +121,31 @@
                                             <segue destination="5MH-XM-gTz" kind="show" id="GCq-eH-iAn"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="bWc-aL-Hd7">
+                                        <rect key="frame" x="0.0" y="364" width="414" height="86.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bWc-aL-Hd7" id="QqU-g4-WEc">
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="86.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Understanding Swift Task Groups With Example" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpS-AY-nSg">
+                                                    <rect key="frame" x="20" y="19" width="356.5" height="48.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="hpS-AY-nSg" secondAttribute="bottom" constant="8" id="77Q-48-SCc"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hpS-AY-nSg" secondAttribute="trailing" id="QpJ-Z6-9U3"/>
+                                                <constraint firstItem="hpS-AY-nSg" firstAttribute="leading" secondItem="QqU-g4-WEc" secondAttribute="leadingMargin" id="URE-eo-xNz"/>
+                                                <constraint firstItem="hpS-AY-nSg" firstAttribute="top" secondItem="QqU-g4-WEc" secondAttribute="topMargin" constant="8" id="hkn-0d-qCP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="4sl-T0-KVB" kind="show" id="crx-zW-HRa"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -240,7 +265,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1889.8550724637682" y="-400.44642857142856"/>
+            <point key="canvasLocation" x="2010" y="-2393"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="guy-Tg-MIk">
@@ -333,7 +358,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfG-xt-7TE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1336" y="2511"/>
+            <point key="canvasLocation" x="2009" y="506"/>
         </scene>
         <!--Sendable Demo-->
         <scene sceneID="5Qq-LY-9Y6">
@@ -375,7 +400,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAz-UG-fbz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2386" y="3238"/>
+            <point key="canvasLocation" x="3059" y="1233"/>
         </scene>
         <!--Actor Reentrancy-->
         <scene sceneID="FV6-WQ-7qj">
@@ -440,7 +465,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3xk-yE-QfA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1889.8550724637682" y="1692.8571428571429"/>
+            <point key="canvasLocation" x="2009" y="-275"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="fK8-bA-W1E">
@@ -540,7 +565,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jSs-xd-2wC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1890" y="721"/>
+            <point key="canvasLocation" x="2009" y="-1207"/>
         </scene>
         <!--Data race (dispatch queue)-->
         <scene sceneID="Rpl-w6-cDa">
@@ -582,7 +607,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z7v-0K-0Pr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3113" y="144"/>
+            <point key="canvasLocation" x="3596" y="-2052"/>
         </scene>
         <!--Data race (asynchronous tasks)-->
         <scene sceneID="8pc-3v-4Q1">
@@ -624,7 +649,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lnd-We-sVq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3114" y="848"/>
+            <point key="canvasLocation" x="3597" y="-1349"/>
         </scene>
         <!--Actor-->
         <scene sceneID="qaR-7z-wiA">
@@ -666,7 +691,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9If-wo-aER" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3112" y="1550"/>
+            <point key="canvasLocation" x="3596" y="-647"/>
         </scene>
         <!--Non-Sendable Demo-->
         <scene sceneID="VuQ-sB-VYk">
@@ -709,7 +734,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AFo-Zy-Lxa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2386" y="2510"/>
+            <point key="canvasLocation" x="3058" y="506"/>
+        </scene>
+        <!--Task Group-->
+        <scene sceneID="eI9-bC-u7K">
+            <objects>
+                <viewController id="4sl-T0-KVB" customClass="UnderstandTaskGroupViewController" customModule="SwiftSenpai_Swift_Concurrency" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gch-YC-lNO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJq-eC-wrN">
+                                <rect key="frame" x="40" y="182" width="334" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Execute task group example"/>
+                                <connections>
+                                    <action selector="taskGroupButtonTapped:" destination="4sl-T0-KVB" eventType="touchUpInside" id="9YQ-za-VdT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Xcode console for result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiL-Uk-Ux0">
+                                <rect key="frame" x="40" y="128" width="334" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XdV-Sb-FAs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xiL-Uk-Ux0" firstAttribute="leading" secondItem="XdV-Sb-FAs" secondAttribute="leading" constant="40" id="43R-5U-hmA"/>
+                            <constraint firstItem="ZJq-eC-wrN" firstAttribute="leading" secondItem="XdV-Sb-FAs" secondAttribute="leading" constant="40" id="DhZ-c2-pr6"/>
+                            <constraint firstItem="XdV-Sb-FAs" firstAttribute="trailing" secondItem="xiL-Uk-Ux0" secondAttribute="trailing" constant="40" id="G6s-LZ-x7R"/>
+                            <constraint firstItem="xiL-Uk-Ux0" firstAttribute="top" secondItem="XdV-Sb-FAs" secondAttribute="top" constant="40" id="e63-4l-rkT"/>
+                            <constraint firstItem="ZJq-eC-wrN" firstAttribute="top" secondItem="xiL-Uk-Ux0" secondAttribute="bottom" constant="30" id="pYq-Su-h1L"/>
+                            <constraint firstItem="XdV-Sb-FAs" firstAttribute="trailing" secondItem="ZJq-eC-wrN" secondAttribute="trailing" constant="40" id="wiL-YY-Sy7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Task Group" id="Dw6-Vc-lyU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pfg-jI-sR9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2008.6956521739132" y="1682.8125"/>
         </scene>
     </scenes>
     <resources>
