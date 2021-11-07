@@ -18,6 +18,7 @@
 		183074FB26EC996A0071FBEF /* ReentrancyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183074FA26EC996A0071FBEF /* ReentrancyViewController.swift */; };
 		183571FF271565820061FD22 /* UnderstandTaskGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183571FE271565820061FD22 /* UnderstandTaskGroupViewController.swift */; };
 		184ECFC726C7752500C8EB68 /* AlbumsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184ECFC626C7752500C8EB68 /* AlbumsFetcher.swift */; };
+		1862F33F2732AECF00CE9276 /* TaskGroupErrorHandlingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862F33E2732AECF00CE9276 /* TaskGroupErrorHandlingViewController.swift */; };
 		18BBA1EC26DD170E00C7CB4E /* DataRaceDispatchQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA1EB26DD170E00C7CB4E /* DataRaceDispatchQueueViewController.swift */; };
 		18BBA1EE26DD1A4800C7CB4E /* DataRaceAsyncAwaitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA1ED26DD1A4800C7CB4E /* DataRaceAsyncAwaitViewController.swift */; };
 		18BBA1F026DD27F800C7CB4E /* ActorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA1EF26DD27F800C7CB4E /* ActorViewController.swift */; };
@@ -56,6 +57,7 @@
 		183074FA26EC996A0071FBEF /* ReentrancyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReentrancyViewController.swift; sourceTree = "<group>"; };
 		183571FE271565820061FD22 /* UnderstandTaskGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderstandTaskGroupViewController.swift; sourceTree = "<group>"; };
 		184ECFC626C7752500C8EB68 /* AlbumsFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsFetcher.swift; sourceTree = "<group>"; };
+		1862F33E2732AECF00CE9276 /* TaskGroupErrorHandlingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroupErrorHandlingViewController.swift; sourceTree = "<group>"; };
 		18BBA1EB26DD170E00C7CB4E /* DataRaceDispatchQueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRaceDispatchQueueViewController.swift; sourceTree = "<group>"; };
 		18BBA1ED26DD1A4800C7CB4E /* DataRaceAsyncAwaitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRaceAsyncAwaitViewController.swift; sourceTree = "<group>"; };
 		18BBA1EF26DD27F800C7CB4E /* ActorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				183074F926EC98B00071FBEF /* Actor Reentrancy Problem */,
 				1804EE262709642600E91CA1 /* Sendable Demo */,
 				183571FD271565580061FD22 /* Understanding Task Group */,
+				1862F33D2732AE9A00CE9276 /* Task Group Error Handling */,
 				182CC6F226C6994A00D84105 /* AppDelegate.swift */,
 				182CC6F426C6994A00D84105 /* SceneDelegate.swift */,
 				182CC6F826C6994A00D84105 /* Main.storyboard */,
@@ -145,6 +148,14 @@
 				183571FE271565820061FD22 /* UnderstandTaskGroupViewController.swift */,
 			);
 			path = "Understanding Task Group";
+			sourceTree = "<group>";
+		};
+		1862F33D2732AE9A00CE9276 /* Task Group Error Handling */ = {
+			isa = PBXGroup;
+			children = (
+				1862F33E2732AECF00CE9276 /* TaskGroupErrorHandlingViewController.swift */,
+			);
+			path = "Task Group Error Handling";
 			sourceTree = "<group>";
 		};
 		18BBA1E726DD03C100C7CB4E /* Making Network Requests  */ = {
@@ -300,6 +311,7 @@
 				182CC6F726C6994A00D84105 /* FetchAlbumsViewController.swift in Sources */,
 				18BBA1EE26DD1A4800C7CB4E /* DataRaceAsyncAwaitViewController.swift in Sources */,
 				182CC6F326C6994A00D84105 /* AppDelegate.swift in Sources */,
+				1862F33F2732AECF00CE9276 /* TaskGroupErrorHandlingViewController.swift in Sources */,
 				183074FB26EC996A0071FBEF /* ReentrancyViewController.swift in Sources */,
 				182CC6F526C6994A00D84105 /* SceneDelegate.swift in Sources */,
 				1804EE2A2709748C00E91CA1 /* NonSendableDemoViewController.swift in Sources */,
@@ -481,9 +493,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SM42V25455;
+				DEVELOPMENT_TEAM = QVEMCYHXHL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SwiftSenpai-Swift-Concurrency/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -496,8 +509,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leekahseng.SwiftSenpai-Swift-Concurrency";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LeeKahSeng.SwiftSenpai-Swift-Concurrency";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "yeos_lee dev profile";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -509,9 +523,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SM42V25455;
+				DEVELOPMENT_TEAM = QVEMCYHXHL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SwiftSenpai-Swift-Concurrency/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -524,8 +539,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leekahseng.SwiftSenpai-Swift-Concurrency";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LeeKahSeng.SwiftSenpai-Swift-Concurrency";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "yeos_lee dev profile";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

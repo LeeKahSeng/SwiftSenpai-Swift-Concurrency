@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ah4-a3-nHS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ah4-a3-nHS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -146,6 +146,31 @@
                                             <segue destination="4sl-T0-KVB" kind="show" id="crx-zW-HRa"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="dsn-py-ikb">
+                                        <rect key="frame" x="0.0" y="450.5" width="414" height="86.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dsn-py-ikb" id="H2L-a0-Ki8">
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="86.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Handle Errors in Swift Task Group" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEC-wM-jmN">
+                                                    <rect key="frame" x="20" y="19" width="356.5" height="48.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nEC-wM-jmN" firstAttribute="top" secondItem="H2L-a0-Ki8" secondAttribute="topMargin" constant="8" id="3CL-Cd-eqV"/>
+                                                <constraint firstItem="nEC-wM-jmN" firstAttribute="leading" secondItem="H2L-a0-Ki8" secondAttribute="leadingMargin" id="4cy-zj-mkV"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="nEC-wM-jmN" secondAttribute="trailing" id="ORJ-Gv-MIs"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="nEC-wM-jmN" secondAttribute="bottom" constant="8" id="yGA-GL-IB9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="83R-mx-ETS" kind="show" id="hPt-Mh-0td"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -159,6 +184,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="liA-b2-MQ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="536.231884057971" y="-84.375"/>
+        </scene>
+        <!--Error Handling in Task Group-->
+        <scene sceneID="S5i-Dp-E7j">
+            <objects>
+                <viewController id="83R-mx-ETS" customClass="TaskGroupErrorHandlingViewController" customModule="SwiftSenpai_Swift_Concurrency" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JAM-Qn-0G4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRo-nR-XWA">
+                                <rect key="frame" x="40" y="187" width="334" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Throw when error occurs"/>
+                                <connections>
+                                    <action selector="throwErrorButtonTapped:" destination="83R-mx-ETS" eventType="touchUpInside" id="R93-9y-NnW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="th9-OU-MYf">
+                                <rect key="frame" x="40" y="253" width="334" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Return results of completed tasks"/>
+                                <connections>
+                                    <action selector="returnResultsButtonTapped:" destination="83R-mx-ETS" eventType="touchUpInside" id="BEe-ie-bGp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Xcode console for result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mh3-1R-PKM">
+                                <rect key="frame" x="40" y="128" width="334" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cwV-21-T5Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cwV-21-T5Q" firstAttribute="trailing" secondItem="aRo-nR-XWA" secondAttribute="trailing" constant="40" id="4Ym-Zv-4FM"/>
+                            <constraint firstItem="cwV-21-T5Q" firstAttribute="trailing" secondItem="Mh3-1R-PKM" secondAttribute="trailing" constant="40" id="4bw-Os-xGC"/>
+                            <constraint firstItem="th9-OU-MYf" firstAttribute="top" secondItem="aRo-nR-XWA" secondAttribute="bottom" constant="35" id="5vr-BO-DTD"/>
+                            <constraint firstItem="aRo-nR-XWA" firstAttribute="leading" secondItem="cwV-21-T5Q" secondAttribute="leading" constant="40" id="HvT-el-ZTt"/>
+                            <constraint firstItem="cwV-21-T5Q" firstAttribute="trailing" secondItem="th9-OU-MYf" secondAttribute="trailing" constant="40" id="NjU-dg-wSe"/>
+                            <constraint firstItem="th9-OU-MYf" firstAttribute="leading" secondItem="cwV-21-T5Q" secondAttribute="leading" constant="40" id="RcE-BA-z3P"/>
+                            <constraint firstItem="Mh3-1R-PKM" firstAttribute="top" secondItem="cwV-21-T5Q" secondAttribute="top" constant="40" id="e1d-Yo-2ih"/>
+                            <constraint firstItem="aRo-nR-XWA" firstAttribute="top" secondItem="Mh3-1R-PKM" secondAttribute="bottom" constant="35" id="l91-H0-XI3"/>
+                            <constraint firstItem="Mh3-1R-PKM" firstAttribute="leading" secondItem="cwV-21-T5Q" secondAttribute="leading" constant="40" id="qDj-K2-g5z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Error Handling in Task Group" id="CCu-lp-5Ij"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nLI-KI-QeI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2009" y="2581"/>
         </scene>
         <!--Fetch Albums View Controller-->
         <scene sceneID="tne-QT-ifu">
