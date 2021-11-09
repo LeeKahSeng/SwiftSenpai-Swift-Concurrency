@@ -138,47 +138,4 @@ class TaskGroupErrorHandlingViewController: UIViewController {
         }
     }
 
-//    @IBAction func taskGroupButtonTapped(_ sender: Any) {
-//
-//        Task {
-//
-//            print("Task start   : \(Date())")
-//
-//            let allResults = await withTaskGroup(of: (String, Double).self,
-//                                                 returning: [String: Double].self,
-//                                                 body: { taskGroup in
-//
-//                // Loop through operations array
-//                for operation in operations {
-//
-//                    // Add child task to task group
-//                    taskGroup.addTask {
-//
-//                        // Execute slow operation
-//                        let value = await operation.execute()
-//
-//                        // Return child task result
-//                        return (operation.name, value)
-//                    }
-//
-//                }
-//
-//                // Collect results of all child task in a dictionary
-//                var childTaskResults = [String: Double]()
-//                for await result in taskGroup {
-//                    // Set operation name as key and operation result as value
-//                    childTaskResults[result.0] = result.1
-//                }
-//
-//                // All child tasks finish running, thus task group result
-//                return childTaskResults
-//            })
-//
-//            print("Task end     : \(Date())")
-//            print("allResults   : \(allResults)")
-//
-//        }
-//
-//    }
-
 }
