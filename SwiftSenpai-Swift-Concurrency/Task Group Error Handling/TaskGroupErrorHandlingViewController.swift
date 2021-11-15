@@ -9,11 +9,11 @@ import UIKit
 
 class TaskGroupErrorHandlingViewController: UIViewController {
 
+    enum DivideOperationError: Error {
+        case divideByZero
+    }
+    
     struct SlowDivideOperation {
-        
-        enum DivideOperationError: Error {
-            case divideByZero
-        }
         
         let name: String
         let a: Double
@@ -25,9 +25,10 @@ class TaskGroupErrorHandlingViewController: UIViewController {
             // Sleep for x seconds
             await Task.sleep(sleepDuration * 1_000_000_000)
             
-            // Check for cancellation. If task is cancelled, do not continue execution.
+            // Check for cancellation. If task is canceled, throw `CancellationError`.
             try Task.checkCancellation()
             
+            // Throw error when divisor is zero
             guard b != 0 else {
                 print("⛔️ \(name) throw error")
                 throw DivideOperationError.divideByZero
@@ -84,7 +85,7 @@ class TaskGroupErrorHandlingViewController: UIViewController {
                         childTaskResults[result.0] = result.1
                     }
                     
-                    // All child tasks finish running, thus task group result
+                    // All child tasks finish running, thus return task group result
                     return childTaskResults
                     
                 })

@@ -70,7 +70,7 @@ class UnderstandTaskGroupViewController: UIViewController {
                     childTaskResults[result.0] = result.1
                 }
                 
-                // All child tasks finish running, thus task group result
+                // All child tasks finish running, thus return task group result
                 return childTaskResults
             })
             
