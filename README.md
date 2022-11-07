@@ -5,3 +5,4 @@
 - Sample project for article '[How Sendable Can Help in Preventing Data Races](https://swiftsenpai.com/swift/sendable-prevent-data-races/)'.
 - Sample project for article '[Understanding Swift Task Groups With Examples](https://swiftsenpai.com/swift/understanding-task-groups/)'.
 - Sample project for article '[How to Handle Errors in Swift Task Groups](https://swiftsenpai.com/swift/task-groups-error-handling/)'.
+- Sample project for article '[How Does Swift Concurrency Prevent Thread Explosion](https://swiftsenpai.com/swift/swift-concurrency-prevent-thread-explosion/)'.
