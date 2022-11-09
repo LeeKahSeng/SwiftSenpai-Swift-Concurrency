@@ -23,7 +23,7 @@ class TaskGroupErrorHandlingViewController: UIViewController {
         func execute() async throws -> Double {
             
             // Sleep for x seconds
-            await Task.sleep(sleepDuration * 1_000_000_000)
+            try? await Task.sleep(nanoseconds: sleepDuration * 1_000_000_000)
             
             // Check for cancellation. If task is canceled, throw `CancellationError`.
             try Task.checkCancellation()

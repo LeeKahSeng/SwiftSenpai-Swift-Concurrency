@@ -72,7 +72,7 @@ class FetchAlbumsViewController: UIViewController {
                 DispatchQueue.main.async {
                     
                     // Update collection view content
-                    updateCollectionViewSnapshot(albums)
+                    self.updateCollectionViewSnapshot(albums)
                 }
                 
             case .failure(let error):

@@ -19,7 +19,7 @@ class UnderstandTaskGroupViewController: UIViewController {
         func execute() async -> Double {
             
             // Sleep for x seconds
-            await Task.sleep(sleepDuration * 1_000_000_000)
+            try? await Task.sleep(nanoseconds: sleepDuration * 1_000_000_000)
             
             let value = a / b
             return value
