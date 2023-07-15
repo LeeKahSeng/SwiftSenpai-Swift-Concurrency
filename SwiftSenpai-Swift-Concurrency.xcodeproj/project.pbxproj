@@ -18,8 +18,6 @@
 		183074FB26EC996A0071FBEF /* ReentrancyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183074FA26EC996A0071FBEF /* ReentrancyViewController.swift */; };
 		183571FF271565820061FD22 /* UnderstandTaskGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183571FE271565820061FD22 /* UnderstandTaskGroupViewController.swift */; };
 		184ECFC726C7752500C8EB68 /* AlbumsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184ECFC626C7752500C8EB68 /* AlbumsFetcher.swift */; };
-		185CF9F72927B888004ED47E /* BottleneckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185CF9F62927B888004ED47E /* BottleneckViewController.swift */; };
-		185CF9F92927C25D004ED47E /* BottleneckTestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185CF9F82927C25D004ED47E /* BottleneckTestExecutor.swift */; };
 		1862F33F2732AECF00CE9276 /* TaskGroupErrorHandlingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862F33E2732AECF00CE9276 /* TaskGroupErrorHandlingViewController.swift */; };
 		187D599F2917E6A900439677 /* ThreadExplosionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D599E2917E6A900439677 /* ThreadExplosionViewController.swift */; };
 		187D59A12917EE3400439677 /* HeavyWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D59A02917EE3400439677 /* HeavyWork.swift */; };
@@ -61,8 +59,6 @@
 		183074FA26EC996A0071FBEF /* ReentrancyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReentrancyViewController.swift; sourceTree = "<group>"; };
 		183571FE271565820061FD22 /* UnderstandTaskGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderstandTaskGroupViewController.swift; sourceTree = "<group>"; };
 		184ECFC626C7752500C8EB68 /* AlbumsFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsFetcher.swift; sourceTree = "<group>"; };
-		185CF9F62927B888004ED47E /* BottleneckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleneckViewController.swift; sourceTree = "<group>"; };
-		185CF9F82927C25D004ED47E /* BottleneckTestExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleneckTestExecutor.swift; sourceTree = "<group>"; };
 		1862F33E2732AECF00CE9276 /* TaskGroupErrorHandlingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroupErrorHandlingViewController.swift; sourceTree = "<group>"; };
 		187D599E2917E6A900439677 /* ThreadExplosionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadExplosionViewController.swift; sourceTree = "<group>"; };
 		187D59A02917EE3400439677 /* HeavyWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeavyWork.swift; sourceTree = "<group>"; };
@@ -105,6 +101,13 @@
 			path = "Sendable Demo";
 			sourceTree = "<group>";
 		};
+		1819F7812A62BBF600A518B9 /* Async Stream */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Async Stream";
+			sourceTree = "<group>";
+		};
 		182CC6E626C6994A00D84105 = {
 			isa = PBXGroup;
 			children = (
@@ -133,7 +136,7 @@
 				183571FD271565580061FD22 /* Understanding Task Group */,
 				1862F33D2732AE9A00CE9276 /* Task Group Error Handling */,
 				187D599D2917E66C00439677 /* Prevent Thread Explosion */,
-				185CF9F52927B83A004ED47E /* Bottleneck Deep Dive */,
+				1819F7812A62BBF600A518B9 /* Async Stream */,
 				182CC6F226C6994A00D84105 /* AppDelegate.swift */,
 				182CC6F426C6994A00D84105 /* SceneDelegate.swift */,
 				182CC6F826C6994A00D84105 /* Main.storyboard */,
@@ -158,15 +161,6 @@
 				183571FE271565820061FD22 /* UnderstandTaskGroupViewController.swift */,
 			);
 			path = "Understanding Task Group";
-			sourceTree = "<group>";
-		};
-		185CF9F52927B83A004ED47E /* Bottleneck Deep Dive */ = {
-			isa = PBXGroup;
-			children = (
-				185CF9F62927B888004ED47E /* BottleneckViewController.swift */,
-				185CF9F82927C25D004ED47E /* BottleneckTestExecutor.swift */,
-			);
-			path = "Bottleneck Deep Dive";
 			sourceTree = "<group>";
 		};
 		1862F33D2732AE9A00CE9276 /* Task Group Error Handling */ = {
@@ -337,7 +331,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				187D59A12917EE3400439677 /* HeavyWork.swift in Sources */,
-				185CF9F92927C25D004ED47E /* BottleneckTestExecutor.swift in Sources */,
 				182CC6F726C6994A00D84105 /* FetchAlbumsViewController.swift in Sources */,
 				18BBA1EE26DD1A4800C7CB4E /* DataRaceAsyncAwaitViewController.swift in Sources */,
 				182CC6F326C6994A00D84105 /* AppDelegate.swift in Sources */,
@@ -345,7 +338,6 @@
 				187D599F2917E6A900439677 /* ThreadExplosionViewController.swift in Sources */,
 				183074FB26EC996A0071FBEF /* ReentrancyViewController.swift in Sources */,
 				182CC6F526C6994A00D84105 /* SceneDelegate.swift in Sources */,
-				185CF9F72927B888004ED47E /* BottleneckViewController.swift in Sources */,
 				1804EE2A2709748C00E91CA1 /* NonSendableDemoViewController.swift in Sources */,
 				1804EE282709648600E91CA1 /* SendableDemoViewController.swift in Sources */,
 				18BBA1F026DD27F800C7CB4E /* ActorViewController.swift in Sources */,
