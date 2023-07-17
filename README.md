@@ -7,3 +7,4 @@
 - Sample project for article '[How to Handle Errors in Swift Task Groups](https://swiftsenpai.com/swift/task-groups-error-handling/)'.
 - Sample project for article '[How Does Swift Concurrency Prevent Thread Explosion](https://swiftsenpai.com/swift/swift-concurrency-prevent-thread-explosion/)'.
 - Sample project for article '[A Deep Dive Into the Swift Concurrency Bottleneck](https://swiftsenpai.com/swift/swift-concurrency-bottleneck/)'.
+- Sample project for article '[How to Create Callback-like Behavior Using AsyncStream in Swift](https://swiftsenpai.com/swift/asyncstream-callback/)'.
