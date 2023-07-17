@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ah4-a3-nHS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -195,6 +194,31 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="k9h-gb-1U2" kind="show" id="Zrd-hm-urf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="ex3-kO-2EN">
+                                        <rect key="frame" x="0.0" y="623.5" width="414" height="86.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ex3-kO-2EN" id="pB2-rj-izw">
+                                            <rect key="frame" x="0.0" y="0.0" width="383.5" height="86.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Use AsyncStream to Create Callback-like Behavior in Swift" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hE-6X-Pin">
+                                                    <rect key="frame" x="20" y="19" width="355.5" height="48.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="7hE-6X-Pin" secondAttribute="bottom" constant="8" id="3Kz-iu-y4v"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="7hE-6X-Pin" secondAttribute="trailing" id="Wbl-sF-E7x"/>
+                                                <constraint firstItem="7hE-6X-Pin" firstAttribute="top" secondItem="pB2-rj-izw" secondAttribute="topMargin" constant="8" id="rZq-K6-7WR"/>
+                                                <constraint firstItem="7hE-6X-Pin" firstAttribute="leading" secondItem="pB2-rj-izw" secondAttribute="leadingMargin" id="skn-ZF-bSt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="IRg-ab-HOp" kind="show" id="glb-2q-qKX"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -450,6 +474,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SBc-26-E3B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-46" y="1233"/>
+        </scene>
+        <!--AsyncStream-->
+        <scene sceneID="eC9-tc-qI7">
+            <objects>
+                <viewController id="IRg-ab-HOp" customClass="AsyncStreamProgressViewController" customModule="SwiftSenpai_Swift_Concurrency" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SN9-1L-ZJv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4IM-Yc-eaN">
+                                <rect key="frame" x="55" y="446" width="304" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="iXo-hC-pN3"/>
+                                </constraints>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vez-US-lmq">
+                                <rect key="frame" x="136.5" y="466" width="141.5" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start Download"/>
+                                <connections>
+                                    <action selector="starButtonTapped:" destination="IRg-ab-HOp" eventType="touchUpInside" id="gv5-ga-jHD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNV-Gr-gwZ">
+                                <rect key="frame" x="186.5" y="410.5" width="41.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eTX-FU-DqF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4IM-Yc-eaN" firstAttribute="leading" secondItem="eTX-FU-DqF" secondAttribute="leading" constant="55" id="4fp-Wj-olN"/>
+                            <constraint firstItem="eTX-FU-DqF" firstAttribute="trailing" secondItem="4IM-Yc-eaN" secondAttribute="trailing" constant="55" id="9DU-aS-VdK"/>
+                            <constraint firstItem="4IM-Yc-eaN" firstAttribute="top" secondItem="hNV-Gr-gwZ" secondAttribute="bottom" constant="16" id="Qf7-Ap-zTv"/>
+                            <constraint firstItem="hNV-Gr-gwZ" firstAttribute="centerX" secondItem="SN9-1L-ZJv" secondAttribute="centerX" id="Zfb-aR-5ve"/>
+                            <constraint firstItem="vez-US-lmq" firstAttribute="top" secondItem="4IM-Yc-eaN" secondAttribute="bottom" constant="16" id="gxN-Nm-DmO"/>
+                            <constraint firstItem="4IM-Yc-eaN" firstAttribute="centerY" secondItem="SN9-1L-ZJv" secondAttribute="centerY" id="v8O-0f-tFa"/>
+                            <constraint firstItem="vez-US-lmq" firstAttribute="centerX" secondItem="SN9-1L-ZJv" secondAttribute="centerX" id="x3W-ni-62I"/>
+                            <constraint firstItem="4IM-Yc-eaN" firstAttribute="centerX" secondItem="SN9-1L-ZJv" secondAttribute="centerX" id="xFK-Ty-4iv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="AsyncStream" id="s3O-cn-Zdm"/>
+                    <connections>
+                        <outlet property="progressBar" destination="4IM-Yc-eaN" id="cru-t2-evH"/>
+                        <outlet property="statusLabel" destination="hNV-Gr-gwZ" id="U9p-12-sOz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aLw-Wa-JXC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911.59420289855075" y="1013.1696428571428"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="FMI-om-axR">
